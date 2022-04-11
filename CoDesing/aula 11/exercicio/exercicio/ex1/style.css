@@ -1,0 +1,34 @@
+/* NÃO ALTERAR */
+
+.itemP {
+    height: 100px;
+    width: 100px;
+    background-color: cadetblue;
+    margin: 10px;
+}
+
+.itemM {
+    height: 220px;
+    width: 220px;
+    background-color: gold;
+    margin: 10px;
+}
+
+.itemG {
+    height: 460px;
+    width: 460px;
+    background-color: crimson;
+    margin: 10px;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+}
+
+/* NÃO ALTERAR */
