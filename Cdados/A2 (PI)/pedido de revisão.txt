@@ -1,0 +1,7 @@
+2. d) Nessa questão tirei 0.125 na seguinte rubrica "P2)(d)(máximo 0,25) Usou/calculou probabilidades? ". Porém, acredito de minha nota deveria ter sido 0.25, pois eu usei a probabilidade calculada no exercício anterior para justificar minha resposta. Além disso, o gabarito apenas apresentou duas diferenças da minha resposta; calculou a probabilidade da questão 2.c) novamente e calculou o seu complemento. Sendo que estes dois passos não eram necessários para chegar a resposta nem eram pedidos.
+
+3. a) O enunciado da questão, não deixava explícito que deveríamos usar tanto os gráficos, quanto as medidas calculadas para justificar. Por isso, mesmo estando na rubrica não é adequado retirar pontos no caso de justificar-se, corretamente, com apenas uma das informações.
+
+4. a) Nessa rubrica,"P4)(a)(máximo 0,4) Calcula variância do custo ok? ", foi pedido a variância, mas no notebook foi pedido o desvio padrão
+
+b) O mesmo problema apontado na letra "a"
