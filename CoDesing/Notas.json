@@ -1,0 +1,52 @@
+{
+    "Diagnósticos": {
+        "Quizzes Individuais": {
+            "Quiz Individual 1": "A+",
+            "Quiz Individual 2": "I",
+            "Quiz Individual 3": "?",
+            "Quiz Individual 4": "?",
+            "Quiz Individual 5": "?"
+        },
+        "Exercícios Individuais": {
+            "Exercícios Individuais 1": "B",
+            "Exercícios Individuais 2": "?",
+            "Exercícios Individuais 3": "?",
+            "Exercícios Individuais 4": "?"
+        }
+    },
+    "Avaliações": {
+        "Prova Prática": {
+            "FE1": "C",
+            "FE2": "D",
+            "FE3": "?"
+        },
+        "APS": {
+            "UX4": "?"
+        },
+        "Projeto": {
+            "FE1": "B",
+            "FE2": "D",
+            "FE3": "?",
+            "UX1": "B+",
+            "UX2": "?",
+            "UX3": "?",
+            "DT1": "A",
+            "DT2": "?",
+            "DT3": "A",
+            "DT4": "?"
+        }
+    },
+    "Deltas": {
+        "FE1": "?",
+        "FE2": "?",
+        "FE3": "?",
+        "UX1": "?",
+        "UX2": "?",
+        "UX3": "?",
+        "UX4": "?",
+        "DT1": "?",
+        "DT2": "?",
+        "DT3": "?",
+        "DT4": "?"
+    }
+}
