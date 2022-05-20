@@ -43,12 +43,21 @@ document.addEventListener('DOMContentLoaded', function(){
         pai.appendChild(filho);
     }
 
-    
+
     // EXERCÍCIO 5
     botao = document.querySelector('.botão')
     botao.addEventListener('click', function(event){
-
+        
         contagem = document.querySelector('.contagens')
+        l_child = contagem.querySelectorAll('li')
+
+        i = 0
+        while (i < l_child.length){
+            console.log(l_child[0])
+            l_child[i] = document.querySelector('.contagens').removeChild(l_child[i])
+            i++
+        }
+        
 
         text = document.querySelector('input').value;
         D = conta(text);
