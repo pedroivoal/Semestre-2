@@ -38,14 +38,26 @@ document.addEventListener('DOMContentLoaded', function(){
     pai = document.querySelector('.completos')
     nomes = junta(l_nomes_homem, l_nomes_mulher, l_sobrenomes)
     for (i of nomes){
-        filho = document.createElement('li')
-        filho.innerHTML = i
-        pai.appendChild(filho)
+        filho = document.createElement('li');
+        filho.innerHTML = i;
+        pai.appendChild(filho);
     }
 
+    
     // EXERCÍCIO 5
-    text = document.querySelector('.contagens')
+    botao = document.querySelector('.botão')
+    botao.addEventListener('click', function(event){
 
+        contagem = document.querySelector('.contagens')
+
+        text = document.querySelector('input').value;
+        D = conta(text);
+        for (k of Object.keys(D)){
+            filho = document.createElement('li')
+            filho.innerHTML = String(k)+':'+String(D[k])
+            contagem.appendChild(filho)
+        }
+    })
 })
 
 function hello() {
@@ -62,7 +74,6 @@ function mostra_faixa(idade) {
     } else{
         return 'idoso';
     }
-    
 }
 
 // EXERCÍCIO 2
