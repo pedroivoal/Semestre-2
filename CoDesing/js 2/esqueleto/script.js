@@ -1,4 +1,3 @@
-// EXEMPLO
 
 document.addEventListener('DOMContentLoaded', function(){
 
