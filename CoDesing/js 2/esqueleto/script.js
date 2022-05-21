@@ -45,15 +45,14 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
     // EXERCÍCIO 5
-    botao = document.querySelector('.botão')
-    botao.addEventListener('click', function(event){
+    botao5 = document.querySelector('.botão')
+    botao5.addEventListener('click', function(event){
         
         contagem = document.querySelector('.contagens')
         l_child = contagem.querySelectorAll('li')
 
         i = 0
         while (i < l_child.length){
-            console.log(l_child[0])
             l_child[i] = document.querySelector('.contagens').removeChild(l_child[i])
             i++
         }
@@ -67,6 +66,17 @@ document.addEventListener('DOMContentLoaded', function(){
             contagem.appendChild(filho)
         }
     })
+
+    // EXERCÍCIO 6
+    botao6 = document.querySelector('.desafio2')
+    botao6.addEventListener('click', function(event){
+        n = document.querySelector('.desafio1').value
+        pre = document.getElementById('pre1')
+        console.log(pre)
+
+        pre.innerHTML = imprime_arvore(n)
+    })
+    
 })
 
 function hello() {
@@ -147,5 +157,39 @@ function conta(s) {
 }
 
 // DESAFIO
-// function imprime_arvore(n) {
-// }
+function imprime_arvore(n) {
+    
+    c = ''
+    for (i=1; i<=n; i++){
+
+        if (i == 1){
+            for(i2=2; i2<=n; i2++) {
+                c += ' '
+            }
+            c += '|'
+            for(i2=2; i2<=n; i2++) {
+                c += ' '
+            }
+            c += '\n'
+
+        }else if(i > 1){
+            for(i2=1; i2<=n-i; i2++) {
+                c += ' '
+            }
+            for(i2=2; i2<=i; i2++) {
+                c += '/'
+            }
+            c += '|'
+            for(i2=2; i2<=i; i2++) {
+                c += String('/')
+            }
+            for(i2=1; i2<=n-i; i2++) {
+                c += ' '
+            }
+            c += '\n'
+            
+        }
+        
+    }
+    return c
+}
