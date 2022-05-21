@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function(){
     })
 
     // EXERCÍCIO 6
+    // DESAFIO
     botao6 = document.querySelector('.desafio2')
     botao6.addEventListener('click', function(event){
         n = document.querySelector('.desafio1').value
