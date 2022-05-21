@@ -2,6 +2,6 @@
 // de sempre envolver o arquivo .js nisto aqui.
 document.addEventListener('DOMContentLoaded', function() {
 
-    // seu código aqui
+    
 
 })

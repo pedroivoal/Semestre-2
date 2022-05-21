@@ -2,6 +2,22 @@
 // de sempre envolver o arquivo .js nisto aqui.
 document.addEventListener('DOMContentLoaded', function() {
 
-    // seu código aqui
+    nav = document.querySelector('nav');
 
+    menuButom = document.querySelector('img');
+    menuButom.addEventListener('click', function(event){
+
+        event.stopPropagation();
+        nav.style.left = -0;
+
+    })
+
+    nav = document.querySelector('nav');
+
+    bodyButom = document.querySelector('body');
+    bodyButom.addEventListener('click', function(event){
+
+        nav.style.left = -100;
+
+    })
 })
