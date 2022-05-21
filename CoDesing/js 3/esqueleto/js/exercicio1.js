@@ -8,16 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
     menuButom.addEventListener('click', function(event){
 
         event.stopPropagation();
-        nav.style.left = -0;
-
+        nav.style.left = '0%';
     })
-
-    nav = document.querySelector('nav');
 
     bodyButom = document.querySelector('body');
     bodyButom.addEventListener('click', function(event){
-
-        nav.style.left = -100;
-
+        
+        nav.style.left = '-100%';
     })
 })
