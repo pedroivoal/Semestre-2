@@ -75,6 +75,10 @@ addEventListener('DOMContentLoaded', function(){
             h5[1].style.color = 'white'//Exercício 6
             lDescricao[0].style.color = 'white'//Exercício 6
             lDescricao[1].style.color = 'white'//Exercício 6
+            selecionar[0].style.color = 'white'//Exercício 6
+            selecionar[1].style.color = 'white'//Exercício 6
+            selecionar[0].style.background = '#423F3E'//Exercício 6
+            selecionar[1].style.background = '#423F3E'//Exercício 6
         } else {
             imgMode.src = "http://127.0.0.1:5500/js%20atividade/img/dark-mode-off.png"
             
@@ -92,6 +96,10 @@ addEventListener('DOMContentLoaded', function(){
             h5[1].style.color = 'black'//Exercício 6
             lDescricao[0].style.color = 'black'//Exercício 6
             lDescricao[1].style.color = 'black'//Exercício 6
+            selecionar[0].style.color = 'black'//Exercício 6
+            selecionar[1].style.color = 'black'//Exercício 6
+            selecionar[0].style.background = 'lightgray'//Exercício 6
+            selecionar[1].style.background = 'lightgray'//Exercício 6
         }
     })
 })
