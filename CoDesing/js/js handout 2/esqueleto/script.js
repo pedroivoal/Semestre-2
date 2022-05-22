@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     // EXERCÍCIO 6
     // DESAFIO
-    botao6 = document.querySelector('.desafio2')
+    botao6 = document.querySelector('input[type="submit"]')
     botao6.addEventListener('click', function(event){
         n = document.querySelector('.desafio1').value
         pre = document.getElementById('pre1')
@@ -181,7 +181,7 @@ function imprime_arvore(n) {
             }
             c += '|'
             for(i2=2; i2<=i; i2++) {
-                c += String('/')
+                c += String('\\')
             }
             for(i2=1; i2<=n-i; i2++) {
                 c += ' '
