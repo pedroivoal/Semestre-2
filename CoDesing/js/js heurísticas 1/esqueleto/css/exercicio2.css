@@ -1,0 +1,35 @@
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+h1 {
+  margin: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+a {
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+
+a:active {
+  background-color: #00ffff;
+}

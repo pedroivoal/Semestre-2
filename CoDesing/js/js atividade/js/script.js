@@ -58,6 +58,7 @@ addEventListener('DOMContentLoaded', function(){
 
         imgMode = document.querySelector('.img-mode')
 
+        // outro jeito de achar o link? // // // // // // // // // // // // // // // / / / / / /
         if (imgMode.src == "http://127.0.0.1:5500/js%20atividade/img/dark-mode-off.png"){
             imgMode.src = "http://127.0.0.1:5500/js%20atividade/img/dark-mode-on.png"
             
