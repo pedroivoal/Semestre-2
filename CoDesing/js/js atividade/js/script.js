@@ -60,30 +60,38 @@ addEventListener('DOMContentLoaded', function(){
 
         if (imgMode.src == "http://127.0.0.1:5500/js%20atividade/img/dark-mode-off.png"){
             imgMode.src = "http://127.0.0.1:5500/js%20atividade/img/dark-mode-on.png"
-            body.style.background = '#2b2b2b'//Exercício 6
-            header.style.background = '#171010'//Exercício 6
+            
+            // header colors
+            header.style.background = '#2b2b2b'//Exercício 6
+            title.style.color = 'white'//Exercício 6
+            imgMode.style.background = '#423F3E'//Exercício 6
             h1.style.color = 'white'//Exercício 6
+            
+            // body colors
+            body.style.background = '#334756'//Exercício 6
             curso1.style.color = 'white'//Exercício 6
             curso2.style.color = 'white'//Exercício 6
-            lDescricao[0].style.color = 'white'//Exercício 6
-            lDescricao[1].style.color = 'white'//Exercício 6
-            imgMode.style.background = '#423F3E'//Exercício 6
-            title.style.color = 'white'//Exercício 6
             h5[0].style.color = 'white'//Exercício 6
             h5[1].style.color = 'white'//Exercício 6
+            lDescricao[0].style.color = 'white'//Exercício 6
+            lDescricao[1].style.color = 'white'//Exercício 6
         } else {
             imgMode.src = "http://127.0.0.1:5500/js%20atividade/img/dark-mode-off.png"
-            body.style.background = 'white'//Exercício 6
+            
+            // header colors
             header.style.background = 'whitesmoke'//Exercício 6
+            title.style.color = 'gray'//Exercício 6
+            imgMode.style.background = 'whitesmoke'//Exercício 6
             h1.style.color = 'black'//Exercício 6
+            
+            // body colors
+            body.style.background = 'white'//Exercício 6
             curso1.style.color = 'black'//Exercício 6
             curso2.style.color = 'black'//Exercício 6
-            lDescricao[0].style.color = 'black'//Exercício 6
-            lDescricao[1].style.color = 'black'//Exercício 6
-            imgMode.style.background = 'whitesmoke'//Exercício 6
-            title.style.color = 'gray'//Exercício 6
             h5[0].style.color = 'black'//Exercício 6
             h5[1].style.color = 'black'//Exercício 6
+            lDescricao[0].style.color = 'black'//Exercício 6
+            lDescricao[1].style.color = 'black'//Exercício 6
         }
     })
 })
