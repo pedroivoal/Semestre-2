@@ -13,17 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
         '1920x1080': 'HD',
         '3840x2160': 'Ultra HD',
     }
-
-    lTamanhos = document.querySelectorAll('a')
-    lTamanhos[0].innerHTML = names[lTamanhos[0].innerHTML]
-    lTamanhos[1].innerHTML = names[lTamanhos[1].innerHTML]
-    lTamanhos[2].innerHTML = names[lTamanhos[2].innerHTML]
-    lTamanhos[3].innerHTML = names[lTamanhos[3].innerHTML]
-    lTamanhos[4].innerHTML = names[lTamanhos[4].innerHTML]
-
+    
     // Escreva seu código abaixo.
 
-    // ESCREVA SEU CÓDIGO AQUI
-
+    lTamanhos = document.querySelectorAll('a')
+    for (i=0; i < lTamanhos.length; i++){
+        lTamanhos[i].innerHTML = names[lTamanhos[i].innerHTML]
+    }
 
 })
