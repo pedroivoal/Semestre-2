@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
     menuButom = document.querySelector('img');
     menuButom.addEventListener('click', function(event){
 
-        event.stopPropagation();
         nav.style.left = '0%';
+        event.stopPropagation();
     })
 
     bodyButom = document.querySelector('body');
-    bodyButom.addEventListener('click', function(event){
+    bodyButom.addEventListener('click', function(){
         
         nav.style.left = '-100%';
     })
