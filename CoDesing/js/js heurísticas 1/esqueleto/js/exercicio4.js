@@ -8,9 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // que essas variáveis sejam usadas dentro
     // de qualquer uma das funções abaixo.
 
+
     let nome = document.querySelector('.nome')
 
     let email = document.querySelector('.email')
+
+    let enviar = document.querySelector('input[type="submit"]')
+
+    enviar.setAttribute("editable", true)
 
 
     // Esta função é chamada sempre que o usuário digitar
@@ -21,7 +26,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function update() {
 
-        // ESCREVA SEU CÓDIGO AQUI
+        if (nome == null || email == null){
+            enviar.setAttribute("editable", true)
+            console.log('bom')
+        } else {
+            enviar.setAttribute("editable", false)
+        }
 
     }
 
