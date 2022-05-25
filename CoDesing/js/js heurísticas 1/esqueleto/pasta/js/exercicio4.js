@@ -25,10 +25,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function update() {
 
-        if (nome.value == '' || email.value == ''){
+        if (nome.value == null || email.value == null){
             enviar.disabled = true;
+            console.log('bom')
         } else {
             enviar.disabled = false;
+            console.log('melhor')
+
         }
 
     }
