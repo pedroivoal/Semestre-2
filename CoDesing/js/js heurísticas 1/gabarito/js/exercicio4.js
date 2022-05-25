@@ -8,14 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // que essas variáveis sejam usadas dentro
     // de qualquer uma das funções abaixo.
 
-
     let nome = document.querySelector('.nome')
 
     let email = document.querySelector('.email')
 
-    let enviar = document.querySelector('input[type="submit"]')
-
-    enviar.disabled = true;
 
     // Esta função é chamada sempre que o usuário digitar
     // alguma coisa em um dos campos (se quiser saber qual
@@ -24,16 +20,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // o botão se um dos dois campos estiver vazio.
 
     function update() {
+        submit = document.querySelector('input[type="submit"]')
 
-        if (nome.value == null || email.value == null){
-            enviar.disabled = true;
-            console.log('bom')
+        if(nome.value == '' || email.value == '') {
+            submit.disabled = true
         } else {
-            enviar.disabled = false;
-            console.log('melhor')
-
+            submit.disabled = false
         }
-
     }
 
 
@@ -48,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         update()
     })
 
+    update()
 
 
 })

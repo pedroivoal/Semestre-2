@@ -2,7 +2,6 @@
 // porque envolver o arquivo .js nisto aqui.
 document.addEventListener('DOMContentLoaded', function() {
 
-    
 
     // Neste dicionário, não mexa.
 
@@ -13,12 +12,15 @@ document.addEventListener('DOMContentLoaded', function() {
         '1920x1080': 'HD',
         '3840x2160': 'Ultra HD',
     }
-    
+
+
     // Escreva seu código abaixo.
 
-    lTamanhos = document.querySelectorAll('a')
-    for (a of lTamanhos){
+    as = document.querySelectorAll('a')
+
+    for (a of as) {
         a.innerHTML = names[a.innerHTML]
     }
+
 
 })

@@ -40,14 +40,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // na lista 'history' qual era o total antes da soma.
 
     function add() {
+        total = pegaTotal()
 
-        history.push(parseInt(p.innerHTML))
-        let s = 0
-        for (i of history){
-            s += i
-        }
-        atualizaTotal(s)
+        history.push(total)
 
+        valor = parseInt(p.innerHTML)
+
+        atualizaTotal(total + valor)
     }
 
 
@@ -60,14 +59,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // valor anterior (se não fizemos nenhuma soma ainda).
 
     function undo(total) {
+        if(history.length > 0) {
+            total = history.pop()
 
-        history.pop()
-        let s = 0
-        for (i of history){
-            s += i
+            atualizaTotal(total)
         }
-        atualizaTotal(s)
-
     }
 
 
