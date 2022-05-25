@@ -1,0 +1,40 @@
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #005500;
+}
+
+figure {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+p {
+  margin: 1rem;
+}
+
+img {
+  width: 7rem;
+  border: .2rem solid #005500;
+  border-radius: 50%;
+}
+
+form {
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 0;
+}
