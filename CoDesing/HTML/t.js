@@ -1,1 +1,0 @@
-print("va se fuder")
