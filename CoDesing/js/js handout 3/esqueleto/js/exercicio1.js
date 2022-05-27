@@ -3,6 +3,9 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     nav = document.querySelector('nav');
+    nav.addEventListener('click', function(event){
+        event.stopPropagation()
+    })
 
     menuButom = document.querySelector('img');
     menuButom.addEventListener('click', function(event){

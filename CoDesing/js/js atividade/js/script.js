@@ -49,6 +49,7 @@ addEventListener('DOMContentLoaded', function(){
     header.appendChild(h1)
 
     // Exercício 3 + Exercício 6
+    booleana = true
     imgMode = document.querySelector('.img-mode')
     imgMode.addEventListener('click', function(event){
 
@@ -56,11 +57,8 @@ addEventListener('DOMContentLoaded', function(){
         title = document.querySelector('.home-link')//Exercício 6
         h5 = document.querySelectorAll('h5')//Exercício 6
 
-        imgMode = document.querySelector('.img-mode')
-
-        // outro jeito de achar o link? // // // // // // // // // // // // // // // / / / / / /
-        if (imgMode.src == "http://127.0.0.1:5500/js%20atividade/img/dark-mode-off.png"){
-            imgMode.src = "http://127.0.0.1:5500/js%20atividade/img/dark-mode-on.png"
+        if (booleana){
+            imgMode.src = "/img/dark-mode-on.png"
             
             // header colors
             header.style.background = '#2b2b2b'//Exercício 6
@@ -80,8 +78,10 @@ addEventListener('DOMContentLoaded', function(){
             selecionar[1].style.color = 'white'//Exercício 6
             selecionar[0].style.background = '#423F3E'//Exercício 6
             selecionar[1].style.background = '#423F3E'//Exercício 6
+
+            booleana = false
         } else {
-            imgMode.src = "http://127.0.0.1:5500/js%20atividade/img/dark-mode-off.png"
+            imgMode.src = "/img/dark-mode-off.png"
             
             // header colors
             header.style.background = 'whitesmoke'//Exercício 6
@@ -101,6 +101,8 @@ addEventListener('DOMContentLoaded', function(){
             selecionar[1].style.color = 'black'//Exercício 6
             selecionar[0].style.background = 'lightgray'//Exercício 6
             selecionar[1].style.background = 'lightgray'//Exercício 6
+
+            booleana = true
         }
     })
 })
