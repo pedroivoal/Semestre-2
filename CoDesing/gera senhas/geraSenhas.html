@@ -10,73 +10,75 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/geraSenhas.js"></script>
 </head>
-<body class="center">
+<body>
 
-        <header>
-            <h1>Random Passwords</h1>
+        <header class="coluna">
+            <h1 class="bordas">Random Passwords</h1>
+            <h2>Do you want this caracteres in your password?</h2>
         </header>
+
         <main>
-            <form>
-                <h2>Do you want this caracteres in your password?</h2>
-                <fieldset id="fieldsetSimbols">
-                    <pre>  !"#$%&()*+,-./:;<=>?@[\]^_`{|}~</pre>
-                    <p>
-                        <input type="radio" name="simbols" id="simbolsYes" value="Yes">
-                        <label for="simbolsYes">Yes</label>
+            <form class="coluna">
+                
+                <fieldset id="fieldsetSimbols" class="bordas coluna bordaigual">
+                    <p class="break list">  !"#$%&()*+,-./:;<=>?@[\]^_`{|}~</p>
+                    <p class="selc">
+                        <label for="simbolsYes">Yes:</label>
+                        <input class="selc" type="radio" name="simbols" id="simbolsYes" value="Yes">
                     </p>
-                    <p>
-                        <input type="radio" name="simbols" id="simbolsNo" value="No">
-                        <label for="simbolsNo">No</label>
-                    </p>
-                </fieldset>
-    
-                <fieldset id="fieldsetNumbers">
-                    <pre>0123456789</pre>
-                    <p>
-                        <input type="radio" name="numbers" id="numbersYes" value="Yes">
-                        <label for="numbersYes">Yes</label>
-                    </p>
-                    <p>
-                        <input type="radio" name="numbers" id="numbersNo" value="No">
-                        <label for="numbersNo">No</label>
+                    <p class="selc">
+                        <label for="simbolsNo">No:</label>
+                        <input class="selc" type="radio" name="simbols" id="simbolsNo" value="No">
                     </p>
                 </fieldset>
     
-                <fieldset id="fieldsetCapitalLetters">
-                    <pre>ABCDEFGHIJKLMNOPQRSTUVWXYZ</pre>
-                    <p>
-                        <input type="radio" name="capitalLetters" id="capitalLettersYes" value="Yes">
-                        <label for="capitalLettersYes">Yes</label>
+                <fieldset id="fieldsetNumbers" class="bordas coluna bordaigual">
+                    <pre class="break list">0123456789</pre>
+                    <p class="selc">
+                        <label for="numbersYes">Yes:</label>
+                        <input class="selc" type="radio" name="numbers" id="numbersYes" value="Yes">
                     </p>
-                    <p>
-                        <input type="radio" name="capitalLetters" id="capitalLettersNo" value="No">
-                        <label for="capitalLettersNo">No</label>
-                    </p>
-                </fieldset>
-    
-                <fieldset id="fieldsetSmallLetters">
-                    <pre>abcdefghijklmnopqrstuvwxyz</pre>
-                    <p>
-                        <input type="radio" name="smallLetters" id="smallLettersYes" value="Yes">
-                        <label for="smallLettersYes">Yes</label>
-                    </p>
-                    <p>
-                        <input type="radio" name="smallLetters" id="smallLettersNo" value="No">
-                        <label for="smallLettersNo">No</label>
+                    <p class="selc">
+                        <label for="numbersNo">No:</label>
+                        <input class="selc" type="radio" name="numbers" id="numbersNo" value="No">
                     </p>
                 </fieldset>
     
-                <div>
-                    <legend>Password size</legend>
-                    <input type="text" id="size">
+                <fieldset id="fieldsetSmallLetters" class="bordas coluna bordaigual">
+                    <p class="break list">abcdefghijklmnopqrstuvwxyz</p>
+                    <p class="selc">
+                        <label for="smallLettersYes">Yes:</label>
+                        <input class="selc" type="radio" name="smallLetters" id="smallLettersYes" value="Yes">
+                    </p>
+                    <p class="selc">
+                        <label for="smallLettersNo">No:</label>
+                        <input class="selc" type="radio" name="smallLetters" id="smallLettersNo" value="No">
+                    </p>
+                </fieldset>
+
+                <fieldset id="fieldsetCapitalLetters" class="bordas coluna bordaigual">
+                    <p class="break list">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                    <p class="selc">
+                        <label for="capitalLettersYes">Yes:</label>
+                        <input class="selc" type="radio" name="capitalLetters" id="capitalLettersYes" value="Yes">
+                    </p>
+                    <p class="selc">
+                        <label for="capitalLettersNo">No:</label>
+                        <input class="selc" type="radio" name="capitalLetters" id="capitalLettersNo" value="No">
+                    </p>
+                </fieldset>
+    
+                <div class="coluna">
+                    <legend>Password size:</legend>
+                    <input type="text" id="size" placeholder="Number of caracteres">
                     <input type="submit" name="smallLetters" id="smallLettersYes" value="Create Password">
                 </div>
                 
             </form>
-    
         </main>
-        <footer>
-            <h3></h3>
+
+        <footer class="coluna">
+            <h3 class="borda"></h3>
         </footer>
     
 </body>

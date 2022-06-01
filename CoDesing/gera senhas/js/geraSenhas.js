@@ -1,9 +1,16 @@
 addEventListener('DOMContentLoaded', function(event){
 
+
+
     submit = document.querySelector(' div input[type="submit"]')
     submit.addEventListener('click', function(event){
 
-        let list = ''
+        check = 0
+        simbols = ['!"#$%&()*+,-./:;<=>?@[\]^_`{|}~']
+        numbers = ['0123456789']
+        smallLetters = ['abcdefghijklmnopqrstuvwxyz']
+        capitalLetters = ['ABCDEFGHIJKLMNOPQRSTUVWXYZ']
+        list = []
         event.preventDefault()
 
         awnsers = document.querySelectorAll('fieldset')
@@ -11,12 +18,20 @@ addEventListener('DOMContentLoaded', function(event){
 
             radio = awnser.querySelector('p input[type="radio"]').checked
             if (radio){console.log(radio)
-                list += awnser.querySelector('pre').innerHTML
+                list += awnser.querySelector('.list').innerHTML
+                check++
                 }
-            
+
         }
+        
+
         password = document.querySelector('footer h3')
         n = parseInt(document.querySelector('div #size').value)
+        if(check==0){
+            window.alert('Você deve marcar sim em pelo menos uma opção.')
+        }else if(parseInt(n)!=n){
+            window.alert('Digite um número inteiro')
+        }
         password.innerHTML = randomPassword(list, n, n)
 
     })
