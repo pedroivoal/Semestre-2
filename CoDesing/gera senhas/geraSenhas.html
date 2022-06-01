@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gera Senhas</title>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/geraSenhas.js"></script>
+</head>
+<body class="center">
+
+        <header>
+            <h1>Random Passwords</h1>
+        </header>
+        <main>
+            <form>
+                <h2>Do you want this caracteres in your password?</h2>
+                <fieldset id="fieldsetSimbols">
+                    <pre>  !"#$%&()*+,-./:;<=>?@[\]^_`{|}~</pre>
+                    <p>
+                        <input type="radio" name="simbols" id="simbolsYes" value="Yes">
+                        <label for="simbolsYes">Yes</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="simbols" id="simbolsNo" value="No">
+                        <label for="simbolsNo">No</label>
+                    </p>
+                </fieldset>
+    
+                <fieldset id="fieldsetNumbers">
+                    <pre>0123456789</pre>
+                    <p>
+                        <input type="radio" name="numbers" id="numbersYes" value="Yes">
+                        <label for="numbersYes">Yes</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="numbers" id="numbersNo" value="No">
+                        <label for="numbersNo">No</label>
+                    </p>
+                </fieldset>
+    
+                <fieldset id="fieldsetCapitalLetters">
+                    <pre>ABCDEFGHIJKLMNOPQRSTUVWXYZ</pre>
+                    <p>
+                        <input type="radio" name="capitalLetters" id="capitalLettersYes" value="Yes">
+                        <label for="capitalLettersYes">Yes</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="capitalLetters" id="capitalLettersNo" value="No">
+                        <label for="capitalLettersNo">No</label>
+                    </p>
+                </fieldset>
+    
+                <fieldset id="fieldsetSmallLetters">
+                    <pre>abcdefghijklmnopqrstuvwxyz</pre>
+                    <p>
+                        <input type="radio" name="smallLetters" id="smallLettersYes" value="Yes">
+                        <label for="smallLettersYes">Yes</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="smallLetters" id="smallLettersNo" value="No">
+                        <label for="smallLettersNo">No</label>
+                    </p>
+                </fieldset>
+    
+                <div>
+                    <legend>Password size</legend>
+                    <input type="text" id="size">
+                    <input type="submit" name="smallLetters" id="smallLettersYes" value="Create Password">
+                </div>
+                
+            </form>
+    
+        </main>
+        <footer>
+            <h3></h3>
+        </footer>
+    
+</body>
+</html>
