@@ -1,7 +1,5 @@
 addEventListener('DOMContentLoaded', function(event){
 
-
-
     submit = document.querySelector(' div input[type="submit"]')
     submit.addEventListener('click', function(event){
 
@@ -18,13 +16,12 @@ addEventListener('DOMContentLoaded', function(event){
 
             radio = awnser.querySelector('p input[type="radio"]').checked
             if (radio){console.log(radio)
-                list += awnser.querySelector('.list').innerHTML
+                list.push(awnser.querySelector('.list').innerHTML)
                 check++
                 }
 
         }
         
-
         password = document.querySelector('footer h3')
         n = parseInt(document.querySelector('div #size').value)
         if(check==0){
@@ -32,22 +29,34 @@ addEventListener('DOMContentLoaded', function(event){
         }else if(parseInt(n)!=n){
             window.alert('Digite um número inteiro')
         }
-        password.innerHTML = randomPassword(list, n, n)
+        password.innerHTML = randomPassword(list, n)
 
     })
 
 })
 
-function randomPassword(list, minSize, maxSize){
+function randomPassword(list, size){
 
-    size = Math.floor(Math.random() * parseInt(maxSize - minSize + 1) + minSize)
+    min = 1
+    max = 4
+    l = ''
+    p = []
+    for (i=0; i<list.length; i++){
+        p.push(Math.floor(Math.random() * parseInt(max - min + 1) + min))
+    }
+    p[1] = Math.floor(Math.random() * parseInt(max+2 - min+3 + 1) + min+3)
+    p[0] = Math.floor(Math.random() * parseInt(max+1 - min-2 + 1) + min+2)
+
+    for(i=0; i<list.length; i++){
+        for(i2=0; i2<p[i]; i2++)
+        l += list[i]
+    }
 
     password = ''
 
     for (i=0; i<size; i++){
-        n = Math.floor(Math.random() * list.length)
-        password += list.substring(n, n + 1)
+        n = Math.floor(Math.random() * l.length)
+        password += l.substring(n, n + 1)
     }
-
     return password
 }
