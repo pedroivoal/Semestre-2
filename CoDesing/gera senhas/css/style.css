@@ -44,6 +44,7 @@ h1 {
     margin: 0.5rem;
     margin-top: 2.5rem;
     padding: 1rem;
+    background-color: #FF9500;
 }
 
 h2 {
@@ -58,12 +59,14 @@ h3{
     border: 0.1rem solid black;
     border-bottom: 0.25rem solid black;
     border-right: 0.2rem solid black;
+    background-color: #FF9500;
 }
 
 fieldset{
     display: flex;
     flex-direction: column;
     margin: 0.5rem 0rem 1.5rem 0rem;
+    background-color: #FF9500;
 }
 
 p{
@@ -77,12 +80,12 @@ label{
 }
 
 body{
-    background-color: rgb(128, 223, 191);
+    background-color: #FFDFB3;
 }
 main{
-    background-color: rgba(140, 171, 180, 0.859);
+    background-color: #FFBF66;
     margin: 0.3rem;
 }
 header{
-    background-color: rgb(141, 223, 223);
+    background-color: #FFBF66;
 }

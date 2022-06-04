@@ -20,9 +20,4 @@ p {
 .visible {
   opacity: 1;
   transition: 4s;
-  /* animation: mymove 5s infinite; */
 }
-
-/* @keyframes mymove {
-  100% {opacity: 1;}
-} */

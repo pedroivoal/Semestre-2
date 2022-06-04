@@ -65,8 +65,8 @@ nav {
 }
 
 .janela {
+  transition: 2s;
   display: none;
-  position: fixed;
   top: 2rem;
   left: 2rem;
   width: 20rem;

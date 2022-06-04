@@ -56,7 +56,6 @@ function addMsg(){
     for (i=12; i<=16; i++){
         h3.innerHTML += data[i]
     }
-
     
     divBolha = document.createElement('div')
     divBolha.classList.add('bolha-usuario')
